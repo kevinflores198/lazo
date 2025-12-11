@@ -1,0 +1,25 @@
+#hero, #carousel, #about, #contact{
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#hero{
+    background-image: url(img/hero-1.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+#hero h1, #hero a{
+    position: relative;
+    top: 40%;
+    margin-left: 3rem;
+    color: white;
+}
+
