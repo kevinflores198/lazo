@@ -1,25 +1,73 @@
-#hero, #carousel, #about, #contact{
+#hero,
+#carousel,
+#contact {
     height: 100vh;
     padding-top: 5rem;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-#hero{
+#hero {
     background-image: url(img/hero-1.jpg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.511);
 }
 
-#hero h1, #hero a{
+#hero h1,
+#hero a {
     position: relative;
     top: 40%;
     margin-left: 3rem;
     color: white;
 }
 
+#about {
+    background-image: url(img/about-1.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 5rem;
+
+}
+
+#about .about-us1 {
+    box-shadow: 20px 20px 0 #772F1A;
+    border-radius: 40px 0 40px 40px;
+    margin-top: 10rem;
+}
+
+#about .about-us2 {
+    box-shadow: 20px 20px 0 #F58549;
+    border-radius: 40px 40px 0 40px;
+    margin-top: -10rem;
+
+}
+
+#about .about-us3 {
+    box-shadow: 20px 20px 0 #A3894A;
+    border-radius: 40px 0 40px 40px;
+}
+
+#about p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: start;
+    font-size: 1.2rem;
+    max-width: 350px;
+    padding: 3rem;
+}
+
+#about-us .p1 {
+    text-align: right !important;
+}
+
+#cta{
+height: 100vh;
+}
