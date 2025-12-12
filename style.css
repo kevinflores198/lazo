@@ -66,7 +66,7 @@ html {
 }
 
 #about .about-us3 {
-    box-shadow: 20px 20px 0 #A3894A;
+    box-shadow: 20px 20px 0 #772F1A;
     border-radius: 40px 0 40px 40px;
 }
 
@@ -118,8 +118,11 @@ html {
 
     #about p {
         max-width: 100%;
+        font-size: 1.3rem;
         padding: 1rem;
         text-align: center !important;
+        font-style: italic !important;
+        
     }
 
     #about .about-1,
@@ -131,6 +134,7 @@ html {
         justify-content: center;
         align-items: center;
         margin-top: 0;
+        margin: 1rem;
     }
 
     #about .about-1 {
@@ -139,13 +143,12 @@ html {
 
     #about .about-2 {
         flex-direction: column-reverse;
-        margin-top: 10rem !important;
+        margin-top: 12rem !important;
     }
 
     #about .about-3 {
         margin-top: 10rem !important;
     }
-
     #cta h1,
     #cta p {
         text-align: center;
