@@ -169,7 +169,7 @@ html {
     right: -100px;
     bottom: 20px;
     transition: all 0.5s;
-
+    z-index: 10;
 }
 
 .arrowUp .fa-solid {
@@ -205,6 +205,7 @@ html {
     right: -100px;
     bottom: 20px;
     transition: all 0.5s;
+    z-index: 10;
 }
 
 .contactMe .fa-brands {
