@@ -1,5 +1,4 @@
 #hero,
-#carousel,
 #contact {
     height: 100vh;
     padding-top: 5rem;
@@ -26,6 +25,19 @@ html {
     color: white;
 }
 
+#carousel {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#carousel .content{
+    margin-top: 0;
+}
+
+#carousel img {
+    border-radius: 20px;
+}
+
 #about {
     background-image: url(img/about-1.jpg);
     width: 100%;
@@ -34,6 +46,7 @@ html {
     background-size: cover;
     margin: 0 auto;
     padding-top: 5rem;
+    padding-bottom: 10rem;
 
 }
 
@@ -59,15 +72,137 @@ html {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: start;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     max-width: 350px;
     padding: 3rem;
+    max-width: 100%;
 }
 
-#about-us .p1 {
+.about-2 .p1 {
     text-align: right !important;
 }
 
-#cta{
-height: 100vh;
+#cta {
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+
+    #hero h1,
+    #hero a {
+        top: 30%;
+        margin-left: 1rem;
+    }
+
+    #carousel {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    #carousel img {
+        height: auto;
+        width: 350px;
+    }
+
+    #about p {
+        max-width: 100%;
+        padding: 1rem;
+        text-align: center !important;
+    }
+
+    #about .about-1,
+    #about .about-2,
+    #about .about-3 {
+        margin-top: 2rem;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #about .about-1 {
+        margin-top: -10rem !important;
+    }
+
+    #about .about-2 {
+        flex-direction: column-reverse;
+        margin-top: 10rem !important;
+    }
+
+    #cta h1,
+    #cta p {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    footer span {
+        text-align: center;
+        display: block;
+        margin-top: 1rem;
+    }
+}
+
+
+.arrowUp {
+  position: fixed;
+  width: 40px;
+  right: -100px;
+  bottom: 20px;
+  transition: all 0.5s;
+
+}
+
+.arrowUp .fa-solid {
+  border: 1px solid var(--hover);
+  background: #F58549;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text);
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.328);
+  transition: all 0.5s;
+}
+
+.arrowUp .fa-solid:hover {
+  background-color: hsl(29, 90%, 62%);
+}
+
+.arrowUp .fa-solid:active {
+  background-color: #772F1A;
+}
+
+
+
+.contactMe {
+  position: fixed;
+  width: 40px;
+  right: -100px;
+  bottom: 20px;
+  transition: all 0.5s;
+}
+
+.contactMe .fa-brands {
+  background-color: #25D366;
+  color: black;
+  align-items: center;
+  padding: 10px;
+  border-radius: 100%;
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.328);
+  transition: all 0.5s;
+  font-size: 40px;
+}
+
+.contactMe .fa-brands:hover {
+  background-color: #09f55f;
+}
+
+.contactMe .fa-brands:active {
+  background-color: #61ce89;
 }
