@@ -13,13 +13,29 @@ html {
 }
 
 #hero {
-    background-image: url(img/hero-1.jpg);
+    background-image: url(img/img-32.jpeg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.511);
 }
+.hidden {
+  display: none;
+}
+
+.ver-mas-btn {
+  margin: 40px auto;
+  display: block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background-color: #caa85c; /* ajustá a tu paleta */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 #hero h1,
 #hero a {
