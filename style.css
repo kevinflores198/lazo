@@ -20,20 +20,22 @@ html {
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.511);
 }
-.hidden {
-  display: none;
+
+.hiddenn {
+    display: none;
 }
 
 .ver-mas-btn {
-  margin: 40px auto;
-  display: block;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: none;
-  background-color: #caa85c; /* ajustá a tu paleta */
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
+    margin: 40px auto;
+    display: block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: #caa85c;
+    /* ajustá a tu paleta */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 
@@ -81,6 +83,10 @@ html {
     margin-top: -10rem;
 }
 
+#benefits-title{
+    padding-bottom: 5rem;
+}
+
 #about .about-us3 {
     box-shadow: 20px 20px 0 #772F1A;
     border-radius: 40px 0 40px 40px;
@@ -109,6 +115,86 @@ html {
     height: 100vh;
 }
 
+.benefits {
+    width: 100%;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
+    background-color: var(--primary-confiweb);
+    width: 100%;
+}
+
+.benefits h2 {
+    color: var(--text);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.benefits p {
+    text-align: center;
+    color: var(--text);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100%;
+    margin: 0;
+}
+
+.benefit-container h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.benefit-container i {
+    font-size: 4rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+    text-align: start;
+
+}
+
+.benefit-container .left {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    text-align: left;
+}
+
+.benefit-container .medium {
+    text-align: right;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+
+}
+
+.benefit img {
+    width: 50%;
+    height: auto;
+}
+
+.benefits .button-class {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.benefits .button-class h3 {
+    color: var(--text);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
 @media (max-width: 768px) {
 
     #hero h1,
@@ -132,13 +218,98 @@ html {
     }
 
 
+
+    .benefits {
+        width: 100%;
+    }
+
+
+    .benefits h2 {
+        color: var(--text);
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .benefits p {
+        text-align: center;
+        color: var(--text);
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .benefit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: var(--primary-confiweb);
+        width: 100%;
+    }
+
+    .benefit-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    .benefit-container h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .benefit-container i {
+        font-size: 2rem;
+        color: var(--text);
+        text-align: center;
+    }
+
+    .benefit-container .left {
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+        text-align: center;
+    }
+
+    .benefit-medium {
+        flex-direction: column-reverse;
+    }
+
+    .benefit-container .medium {
+        text-align: center;
+        margin-right: 1rem;
+        margin-left: 0.5rem;
+
+    }
+
+    .benefits img {
+        width: 100%;
+        height: auto;
+    }
+
+    .benefit .button-class {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .benefits .button-class h3 {
+        color: var(--text);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
+
+
     #about p {
         max-width: 100%;
         font-size: 1.3rem;
         padding: 1rem;
         text-align: center !important;
         font-style: italic !important;
-        
+
     }
 
     #about .about-1,
@@ -165,6 +336,7 @@ html {
     #about .about-3 {
         margin-top: 10rem !important;
     }
+
     #cta h1,
     #cta p {
         text-align: center;
