@@ -83,7 +83,7 @@ html {
     margin-top: -10rem;
 }
 
-#benefits-title{
+#benefits-title {
     padding-bottom: 5rem;
 }
 
@@ -134,6 +134,8 @@ html {
     color: var(--text);
     font-size: 2rem;
     text-align: center;
+    padding-top: 3rem;
+
 }
 
 .benefits p {
