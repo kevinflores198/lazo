@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EMME Indumentaria</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      padding: 10px 14px;
+      cursor: pointer;
+    }
+
+    /* Botón carrito flotante */
+    .cart-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 16px;
+      z-index: 1000;
+    }
+
+    /* Contador */
+    .count {
+      background: red;
+      border-radius: 50%;
+      padding: 2px 8px;
+      margin-left: 6px;
+      font-size: 14px;
+    }
+
+    /* MODAL */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+
+    .item {
+      margin-bottom: 10px;
+    }
+
+    .remove {
+      background: #eee;
+      border: none;
+      color: #900;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>EMME Indumentaria</h1>
+
+<!-- BOTÓN CARRITO -->
+<button class="cart-btn" onclick="abrirCarrito()">
+  🛒 Carrito <span id="contador" class="count">0</span>
+</button>
+
+<!-- PRODUCTO -->
+<div>
+  <h2>Remera</h2>
+
+  <label>
+    Color:
+    <select id="color">
+      <option value="Negra">Negra</option>
+      <option value="Blanca">Blanca</option>
+      <option value="Gris">Gris</option>
+    </select>
+  </label>
+
+  <br><br>
+
+  <label>
+    Talle:
+    <select id="talle">
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+  </label>
+
+  <br><br>
+
+  <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+</div>
+
+<!-- MODAL CARRITO -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h2>Tu carrito</h2>
+
+    <div id="resumen"></div>
+
+    <p>
+      Para más información y mayor seguridad, te recomendamos continuar por WhatsApp
+      con un agente especializado y finalizar tu compra allí.
+    </p>
+
+    <button onclick="enviarWhatsApp()">👉 Seguir en WhatsApp</button>
+    <br><br>
+    <button onclick="cerrarCarrito()">Cerrar</button>
+  </div>
+</div>
+
+<script>
+ 
+</script>
+
+</body>
+</html>
