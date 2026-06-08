@@ -239,7 +239,7 @@ function switchImg(cardIdx, imgIdx) {
 function demoProducts() {
     return [
         {
-            name: 'Cartera Clásica Camel', price: 12500, desc: 'Diseño atemporal en simil cuero camel. Cierre metálico dorado.',
+            name: 'Clásica Camel', price: 12500, desc: 'Diseño atemporal en simil cuero camel. Cierre metálico dorado.',
             images: ['https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&q=80', 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80']
         },
         {
@@ -256,7 +256,7 @@ function demoProducts() {
         },
         {
             name: 'Bandolera Nude', price: 11000, desc: 'Versátil en tono nude. Correa ajustable. Para cada ocasión.',
-            images: ['https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?w=600&q=80']
+            images: ['https://images.unsplash.com/photo-1681747685985-a401c271156c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D']
         },
         {
             name: 'Clutch Dorado', price: 7500, desc: 'Clutch de fiesta en simil cuero dorado brillante.',
